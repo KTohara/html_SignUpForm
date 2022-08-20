@@ -4,50 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b2c42fcf79.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <title>Sign In & Register</title>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">Logo</div>
-    <div class="credits">photo-credits</div>
-  </div>
-
-  <div class="main">
-    <div class="main-wrapper">
-
-      <div class="content">sign up here blablabla</div>
-      <form action="#" method="get">
-        <fieldset>
-          <legend>Sign Up</legend>
-          <div class="input-wrapper">
-
-          </div>
-          <div class="input-wrapper">
-
-          </div>
-          <div class="input-wrapper">
-
-          </div>
-          <div class="input-wrapper">
-
-          </div>
-          <div class="input-wrapper">
-
-          </div>
-          <div class="input-wrapper">
-
-          </div>
-
-          <div class="input-wrapper">
-            <button class="create-account">Create Account
-            
-            </button>
-          </div>
-        </fieldset>
-      </form>
-
+  <main class="main-container">
+    <div class="panel-container">
+      <div class="panel">
+        <div class="content">
+          <h3>Lets get cooking!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem rem dicta deserunt aut iusto?</p>
+          <p>Already have an account?</p>
+          <input type="submit" value="Login" class="login-btn">
+        </div>
+      </div>
+      <img src="images/undraw_cooking_re_g99p.svg" alt="spices" class="backsplash">
     </div>
-  </div>
 
+    <div class="forms-container">
+      <div class="sign-up">
+        <form action="#" class="sign-up-form">
+          <h2>Sign Up</h2>
+
+          <div class="input-field">
+            <i class="fas fa-user-pen"></i>
+            <input type="text" placeholder="First Name">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-user-pen"></i>
+            <input type="text" placeholder="Last Name">
+          </div>
+      
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="Email">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="text" placeholder="Phone Number">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="text" placeholder="Password">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="text" placeholder="Password">
+          </div>
+        </form>
+
+        <p class="social-text">Or sign up with social media</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <button class="sign-up-btn">Sign Up</button>
+
+      </div>
+    </div>
+  </main>
 </body>
 </html>
