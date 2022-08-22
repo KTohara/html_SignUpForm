@@ -30,39 +30,72 @@
       <div class="sign-up">
         <form action="#" class="sign-up-form">
 
-          <h2>Sign Up</h2>
+          <h2>Create Account</h2>
 
           <div class="input-field">
             <i class="fas fa-user-pen"></i>
-            <input type="text" placeholder="First Name">
+            <div class="input-line">
+              <input type="text" placeholder="First Name">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <small>Error message</small>
           </div>
 
           <div class="input-field">
             <i class="fas fa-user-pen"></i>
-            <input type="text" placeholder="Last Name">
+            <div class="input-line">
+              <input type="text" placeholder="Last Name">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <small>Error message</small>
           </div>
       
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email">
+            <div class="input-line">
+              <input type="text" placeholder="Email">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <small>Error message</small>
           </div>
 
           <div class="input-field">
             <i class="fas fa-phone"></i>
-            <input type="text" placeholder="Phone Number">
+            <div class="input-line">
+              <input type="tel" placeholder="Phone Number">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+            <small>Error message</small>
           </div>
 
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="text" placeholder="Password">
+            <div class="input-line">
+              <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+            <small>Error message</small>
           </div>
 
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="text" placeholder="Password">
+            <div class="input-line">
+              <input type="password" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+            <small>Error message</small>
           </div>
         </form>
-        
+
         <button class="btn">Sign Up</button>
 
         <p class="social-text">Or sign up with social media</p>
