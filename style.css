@@ -230,13 +230,62 @@ h2 {
 
 .pw-message {
   visibility: hidden;
-  margin: -5px 1rem 0 0;
+  margin: 0 1rem 0 0;
   color: var(--error);
   max-width: 300px;
   width: 100%;
   font-size: 0.75rem;
 }
 
+.pw-message p:first-child {
+  color: var(--secondary-dark);
+}
+
 .valid {
   color: var(--success);
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    flex-direction: column;
+    min-height: 800px;
+    height: 100vh;
+  }
+
+  .content-container {
+    flex: 0 0 20%;
+    height: 100px;
+    background-size: stretch;
+    min-height: 230px;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content p {
+    margin: 5px 30px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 8px 0 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 35px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
