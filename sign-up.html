@@ -27,94 +27,97 @@
         <img src="images/undraw_cooking_re_g99p.svg" alt="cooking logo" class="logo">
       </div>
 
-      <div class="sign-up">
-        <form action="#" class="sign-up-form">
+      <form action="#" class="sign-up-form">
 
-          <h2>Create Account</h2>
+        <h2>Create Account</h2>
 
-          <div class="input-field">
-            <i class="fas fa-user-pen"></i>
-            <div class="input-line">
-              <input type="text" placeholder="First Name">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small>Error message</small>
+        <div class="input-field">
+          <i class="fas fa-user-pen"></i>
+          <div class="input-line">
+            <input name="first-name" type="text" placeholder="First Name" class="names" id="first-name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
           </div>
-
-          <div class="input-field">
-            <i class="fas fa-user-pen"></i>
-            <div class="input-line">
-              <input type="text" placeholder="Last Name">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small>Error message</small>
-          </div>
-      
-          <div class="input-field">
-            <i class="fas fa-envelope"></i>
-            <div class="input-line">
-              <input type="text" placeholder="Email">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small>Error message</small>
-          </div>
-
-          <div class="input-field">
-            <i class="fas fa-phone"></i>
-            <div class="input-line">
-              <input type="tel" placeholder="Phone Number">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <small>Error message</small>
-          </div>
-
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <div class="input-line">
-              <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <small>Error message</small>
-          </div>
-
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <div class="input-line">
-              <input type="password" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <small>Error message</small>
-          </div>
-        </form>
-
-        <button class="btn">Sign Up</button>
-
-        <p class="social-text">Or sign up with social media</p>
-
-        <div class="social-media">
-          <a href="#" class="social-icon">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+          <small>Error message</small>
         </div>
-        
+
+        <div class="input-field">
+          <i class="fas fa-user-pen"></i>
+          <div class="input-line">
+            <input name="last-name" type="text" placeholder="Last Name" class="names" id="last-name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>Error message</small>
+        </div>
+    
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <div class="input-line">
+            <input name="email" type="text" placeholder="Email" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>Error message</small>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-phone"></i>
+          <div class="input-line">
+            <input name="phone" type="tel" placeholder="Phone (optional)" id="phone">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <small>Error message</small>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <div class="input-line">
+            <input name="password" type="password" placeholder="Password" id="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <small>Error message</small>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <div class="input-line">
+            <input name="confirm-pw" type="password" placeholder="Confirm Password" id="confirm-pw">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <small>Error message</small>
+        </div>
+        <div class="pw-message">
+          <p>Password must contain the following:</p>
+          <p id="letter">A lowercase letter</p>
+          <p id="capital">A uppercase letter</p>
+          <p id="number">A number</p>
+          <p id="length">At least 8 or more characters</p>
+        </div>
+        <button class="btn">Sign Up</button>
+      </form>
+
+      <p class="social-text">Or sign up with social media</p>
+
+      <div class="social-media">
+        <a href="#" class="social-icon">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
   </main>
